@@ -21,11 +21,16 @@
 
     <div id="app">
 
+      <!-- Banner verde posto dietro al container per l'user -->
       <div class="container-fluid bg-green"></div>
 
+      <!-- Container for user -->
       <div class="contain_for_user d-flex px-5">
+
+        <!-- Aside bar dove c'è la navbar per l'utente-->
         <div class="asidebar">
 
+          <!-- Header dove ci sono i dati dell'utente -->
           <header class="d-flex align-items-center px-2">
             <div class="user w-100 justify-content-between d-flex
               align-items-center">
@@ -42,13 +47,25 @@
             </div>
           </header>
 
+          <!-- sezione dedicata alle Notifiche -->
           <div class="alerts p-3 d-flex align-items-center">
             <div class="bell_notification">
               <i class="fas fa-bell-slash"></i>
             </div>
             <div class="text-dark ps-2">
-              <span class="fs-3 ">Ricevi notifiche di nuovi messaggi</span>
+              <span class="fs-5">Ricevi notifiche di nuovi messaggi</span>
               <a href="" class="text-secondary">Attiva le notifiche desktop</a>
+            </div>
+          </div>
+
+          <!-- Sezione per cercare i contatti -->
+          <div class="searchbar">
+            <div class="input-group py-2">
+              <span class="input-group-text" id="inputGroup-sizing-default">
+                <i class="fas fa-search text-secondary"></i>
+              </span>
+              <input type="text" class="form-control" aria-label="Sizing example
+                input" aria-describedby="inputGroup-sizing-default">
             </div>
           </div>
 

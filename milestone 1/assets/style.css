@@ -60,7 +60,7 @@ header .gray_text {
 
 .alerts .bell_notification {
   width: 100px;
-  height: 80px;
+  height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,4 +78,8 @@ header .gray_text {
 .bg-green {
   background-color: var(--green);
   height: 200px;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
