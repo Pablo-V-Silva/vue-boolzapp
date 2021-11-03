@@ -1,13 +1,38 @@
 :root {
   --green: #009688;
-  --lightgray: #DCDBD2;
+  --lightgray: #DBDBD3;
   --slightgray: #EAEAEA;
   --gray: #B1B1B1;
   --blue: #8EDAFC;
 }
 
+/* DEBUG
+________________________________________________________________ */
+
+.debug aside {
+  height: 600px;
+  background-color: var(--blue);
+}
+
+.debug .contain {
+  height: 600px;
+}
+
+body {
+  background-color:var(--lightgray);
+}
+
+aside {
+  width: 30%;
+}
+
+.contain {
+  width: 70%;
+}
+
 .bg-green {
   background-color: var(--green);
+  height: 200px;
 }
 
 .contain {
