@@ -38,10 +38,36 @@ header .gray_text {
   color: gray;
 }
 
-aside {
+/* ASIDE
+************************************************************ */
+.contain_for_user.d-flex.px-5 {
+  width: 80%;
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  transform: translate(-50%, 1px);
+}
+
+.asidebar {
   width: 30%;
   background-color: var(--slightgray);
   border-right: 1px solid #cdcdcd;
+}
+
+.alerts {
+  background-color: var(--blue);
+}
+
+.alerts .bell_notification {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  color: var(--blue);
+  font-size: 2rem;
 }
 
 .contain {
