@@ -70,11 +70,23 @@ header .gray_text {
   font-size: 2rem;
 }
 
+/* CONTAINER DEI MESSAGGI 
+************************************************************ */
 .contain {
   width: 70%;
   background-color: var(--lightgray);
 }
 
+.messages_contain {
+  height: 675px;
+  background-image: url("./img/mine.jpg");
+}
+
+.scripting_text {
+  background-color: var(--slightgray);
+  position: absolute;
+  bottom: 0;
+}
 .bg-green {
   background-color: var(--green);
   height: 200px;
