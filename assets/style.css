@@ -1,0 +1,15 @@
+:root {
+  --green: #009688;
+  --lightgray: #DCDBD2;
+  --slightgray: #EAEAEA;
+  --gray: #B1B1B1;
+  --blue: #8EDAFC;
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.contain {
+  background-color: var(--slightgray);
+}
