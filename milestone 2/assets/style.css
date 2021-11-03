@@ -1,0 +1,102 @@
+:root {
+  --green: #009688;
+  --lightgray: #DBDBD3;
+  --slightgray: #EAEAEA;
+  --gray: #B1B1B1;
+  --blue: #8EDAFC;
+}
+
+/* DEBUG
+________________________________________________________________ */
+
+.debug aside {
+  height: 600px;
+  background-color: var(--blue);
+}
+
+.debug .contain {
+  height: 600px;
+}
+
+/* UTILITY
+*************************************************** */
+body {
+  background-color:var(--lightgray);
+}
+
+/* HEADER */
+header {
+  height: 152px;
+  background-color: var(--slightgray);
+}
+
+header .icons * {
+  padding: 0 0.4rem;
+  color: gray;
+}
+
+header .gray_text {
+  color: gray;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* ASIDE
+************************************************************ */
+.contain_for_user.d-flex.px-5 {
+  width: 80%;
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  transform: translate(-50%, 1px);
+}
+
+.asidebar {
+  width: 30%;
+  background-color: var(--slightgray);
+  border-right: 1px solid #cdcdcd;
+}
+
+.alerts {
+  background-color: var(--blue);
+}
+
+.alerts .bell_notification {
+  width: 100px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+/* CONTAINER DEI MESSAGGI 
+************************************************************ */
+.contain {
+  width: 70%;
+  background-color: var(--lightgray);
+}
+
+.messages_contain {
+  height: 530px;
+  background-image: url("./img/mine.jpg");
+}
+
+.scripting_text {
+  background-color: var(--slightgray);
+  position: absolute;
+  bottom: 0;
+}
+.bg-green {
+  background-color: var(--green);
+  height: 200px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
