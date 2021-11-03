@@ -22,19 +22,34 @@ body {
   background-color:var(--lightgray);
 }
 
+
+/* HEADER */
+header {
+  height: 152px;
+  background-color: var(--slightgray);
+}
+
+header .icons * {
+  padding: 0 0.4rem;
+  color: gray;
+}
+
+header .gray_text {
+  color: gray;
+}
+
 aside {
   width: 30%;
+  background-color: var(--slightgray);
+  border-right: 1px solid #cdcdcd;
 }
 
 .contain {
   width: 70%;
+  background-color: var(--lightgray);
 }
 
 .bg-green {
   background-color: var(--green);
   height: 200px;
-}
-
-.contain {
-  background-color: var(--slightgray);
 }
