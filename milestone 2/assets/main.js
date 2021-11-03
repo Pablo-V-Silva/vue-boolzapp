@@ -1,6 +1,7 @@
 const app = new Vue({
   el: '#app',
   data: {
+    counter: 0,
     contacts: [
       {
         name: 'Michele',
@@ -69,7 +70,7 @@ const app = new Vue({
         ],
       },
       {
-        name: 'Luigi',
+        name: 'Luis*',
         avatar: './assets/img/avatar_5.jpg',
         visible: true,
         messages: [
@@ -86,5 +87,10 @@ const app = new Vue({
         ],
       },
     ]
+  },
+  methods: {
+    contactSelect(n) {
+      this.counter = n
+    },
   }
 })

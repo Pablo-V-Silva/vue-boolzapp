@@ -20,11 +20,13 @@ ________________________________________________________________ */
 
 /* UTILITY
 *************************************************** */
+
 body {
-  background-color:var(--lightgray);
+  background-color: var(--lightgray);
 }
 
 /* HEADER */
+
 header {
   height: 152px;
   background-color: var(--slightgray);
@@ -43,8 +45,15 @@ i {
   cursor: pointer;
 }
 
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /* ASIDE
 ************************************************************ */
+
 .contain_for_user.d-flex.px-5 {
   width: 80%;
   position: absolute;
@@ -75,8 +84,13 @@ i {
   font-size: 2rem;
 }
 
+.contact_card {
+  border-bottom: 1px solid #cdcdcd;
+}
+
 /* CONTAINER DEI MESSAGGI 
 ************************************************************ */
+
 .contain {
   width: 70%;
   background-color: var(--lightgray);
@@ -92,6 +106,23 @@ i {
   position: absolute;
   bottom: 0;
 }
+
+div.sent {
+  float: right;
+  padding: 0.5rem 1rem;
+  background-color: #D5F9BA;
+  margin: 0.3rem 0.5rem;
+  border-radius: 10px;
+}
+
+div.received {
+  float: left;
+  background: white;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0.5rem;
+  border-radius: 10px;
+}
+
 .bg-green {
   background-color: var(--green);
   height: 200px;

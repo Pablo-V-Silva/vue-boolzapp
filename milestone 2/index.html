@@ -71,7 +71,7 @@
 
           <!-- Elenco della rubrica telefonica con VueJS -->
           <div class="contacts" v-for="(contact,index) in contacts">
-            <div class="contact_card p-3 d-flex">
+            <div @click="contactSelect(index)" class="contact_card p-3 d-flex">
               <img class="rounded-circle" :src="contact.avatar" alt="" width="80px">
               <div class="contact_name ps-4 pt-2 fs-3">
                 <p>{{contact.name}}</p>
@@ -89,7 +89,7 @@
               align-items-center">
               <div class="avatar d-flex align-items-center">
                 <!-- immagine del profilo del contatto -->
-                <img class="rounded-circle" src="./assets/img/avatar_1.jpg"
+                <img class="rounded-circle" :src="contacts[counter].avatar"
                   alt="" width="100px">
                 <div class="pt-3">
                   <!-- nome del contatto -->
@@ -112,7 +112,15 @@
 
             <!-- Messaggi del contatto -->
             <div class="messages_from">
-
+              <div class="" v-for="message in contacts[counter].messages">
+                <div class="container_message clearfix">
+                  <div :class="message.status" class="d-flex flex-column">
+                    <span>{{message.text}}</span>
+                    <span class="text-end text-secondary">{{message.date}}</span>
+                  </div>
+                </div>
+              </div>
+              
             </div>
 
             <!-- piè di pagina per la scrittura del messaggio da inviare -->
