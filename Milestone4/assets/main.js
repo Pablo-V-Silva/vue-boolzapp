@@ -115,11 +115,13 @@ const app = new Vue({
     },
 
     searchName() {
-      if (!this.contacs.name.includes(this.searchBar)) {
-        visible = false
-      } else {
-        visible = true
-      }
+      this.contacts.forEach(objectContact => {
+        if (objectContact.name.toLowerCase().includes(this.searchBar.toLowerCase())) {
+          objectContact.visible = true
+        } else {
+          objectContact.visible = false
+        }
+      });
     }
   }
 })
