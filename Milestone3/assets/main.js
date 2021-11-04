@@ -2,6 +2,7 @@ const app = new Vue({
   el: '#app',
   data: {
     counter: 0,
+    text: '',
     contacts: [
       {
         name: 'Michele',
@@ -92,5 +93,14 @@ const app = new Vue({
     contactSelect(n) {
       this.counter = n
     },
+
+    pushMessage() {
+      this.contacts[this.counter].messages.push({
+        date: '',
+        text: this.text,
+        status: 'sent'
+      })
+      this.text = ''
+    }
   }
 })

@@ -2,9 +2,7 @@ const app = new Vue({
   el: '#app',
   data: {
     counter: 0,
-
     text: '',
-
     contacts: [
       {
         name: 'Michele',
@@ -96,17 +94,12 @@ const app = new Vue({
       this.counter = n
     },
 
-    // la funzione deve prendere il testo dentro l'input e pusharlo dentro all'array dentro al suo oggetto
-    userMessage(message) {
-      let newMessage = {
+    pushMessage() {
+      this.contacts[this.counter].messages.push({
         date: '',
-        message: '',
+        text: this.text,
         status: 'sent'
-      }
-    },
-
-    pushMessage(message) {
-      this.contacts[this.counter].message.push(userMessage(message))
+      })
     }
   }
 })
