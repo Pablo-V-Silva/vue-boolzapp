@@ -126,7 +126,7 @@
             <!-- piè di pagina per la scrittura del messaggio da inviare -->
             <div class="scripting_text d-flex align-items-center justify-content-around py-3 w-100">
               <i class="far fa-smile fs-1"></i>
-              <input type="text" name="text_message" id="text_message" placeholder="Scrivi un messaggio" class="py-3 w-75">
+              <input type="text" v-model="text" name="text_message" id="text_message" placeholder="Scrivi un messaggio" class="py-3 w-75" @keyup.enter="pushMessage(text)">
               <i class="fas fa-microphone fs-1"></i>
             </div>
           </div>
