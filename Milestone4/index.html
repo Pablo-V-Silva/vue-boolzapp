@@ -61,7 +61,7 @@
           <!-- Sezione per cercare i contatti -->
           <div class="searchbar">
             <div class="input-group py-2">
-              <span class="input-group-text" id="inputGroup-sizing-default">
+              <span class="input-group-text" id="inputGroup-sizing-default" v-model="searchBar" @keyup="searchName()">
                 <i class="fas fa-search text-secondary"></i>
               </span>
               <input type="text" class="form-control" aria-label="Sizing example
@@ -71,7 +71,7 @@
 
           <!-- Elenco della rubrica telefonica con VueJS -->
           <div class="contacts" v-for="(contact,index) in contacts">
-            <div @click="contactSelect(index)" class="contact_card p-3 d-flex">
+            <div @click="contactSelect(index)" class="contact_card p-3 d-flex" v-show="visible == true">
               <img class="rounded-circle" :src="contact.avatar" alt="" width="80px">
               <div class="contact_name ps-4 pt-2 fs-3">
                 <p>{{contact.name}}</p>

@@ -3,6 +3,7 @@ const app = new Vue({
   data: {
     counter: 0,
     text: '',
+    searchBar: '',
     contacts: [
       {
         name: 'Michele',
@@ -111,6 +112,14 @@ const app = new Vue({
         text: 'Tranqui',
         status: 'received'
       })
+    },
+
+    searchName() {
+      if (!this.contacs.name.includes(this.searchBar)) {
+        visible = false
+      } else {
+        visible = true
+      }
     }
   }
 })
