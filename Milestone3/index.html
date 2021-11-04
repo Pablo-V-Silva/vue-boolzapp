@@ -108,15 +108,15 @@
           </header>
 
           <!-- Visualizzazione dei messaggi dei vari contatti -->
-          <div class="messages_contain overflow-auto">
+          <div class="messages_contain">
 
             <!-- Messaggi del contatto -->
             <div class="messages_from">
               <div class="" v-for="message in contacts[counter].messages">
                 <div class="container_message clearfix">
                   <div :class="message.status" class="d-flex flex-column">
-                    <span>{{message.text}}</span>
-                    <span class="text-end text-secondary">{{message.date}}</span>
+                    <div class="script_of_message fs-5">{{message.text}}</div>
+                    <span class="date text-end text-secondary">{{message.date}}</span>
                   </div>
                 </div>
               </div>
@@ -137,6 +137,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="./assets/main.js"></script>
   </body>
 </html>

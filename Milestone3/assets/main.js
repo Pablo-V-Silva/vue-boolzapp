@@ -96,11 +96,21 @@ const app = new Vue({
 
     pushMessage() {
       this.contacts[this.counter].messages.push({
-        date: '',
+        date: dayjs().format('DD/MM/YYYY, hh:mm:ss'),
         text: this.text,
         status: 'sent'
       })
       this.text = ''
+
+      setTimeout(this.answer, 1000)
+    },
+
+    answer() {
+      this.contacts[this.counter].messages.push({
+        date: dayjs().format('DD/MM/YYYY, hh:mm:ss'),
+        text: 'Tranqui',
+        status: 'received'
+      })
     }
   }
 })
