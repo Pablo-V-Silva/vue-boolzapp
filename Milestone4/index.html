@@ -61,11 +61,11 @@
           <!-- Sezione per cercare i contatti -->
           <div class="searchbar">
             <div class="input-group py-2">
-              <span class="input-group-text" id="inputGroup-sizing-default" v-model="searchBar" @keyup="searchName()">
+              <span class="input-group-text" id="inputGroup-sizing-default">
                 <i class="fas fa-search text-secondary"></i>
               </span>
               <input type="text" class="form-control" aria-label="Sizing example
-                input" aria-describedby="inputGroup-sizing-default" placeholder="Cerca o inizia una nuova chat">
+                input" aria-describedby="inputGroup-sizing-default" placeholder="Cerca o inizia una nuova chat"  v-model="searchBar" @keyup="searchName()">
             </div>
           </div>
 
