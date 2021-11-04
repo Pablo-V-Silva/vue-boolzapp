@@ -100,7 +100,7 @@ i {
   height: 511px;
   background-image: url("./img/mine.jpg");
   overflow-y: auto;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .scripting_text {
