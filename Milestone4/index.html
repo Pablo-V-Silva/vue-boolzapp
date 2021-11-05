@@ -72,9 +72,10 @@
           <!-- Elenco della rubrica telefonica con VueJS -->
           <div class="contacts" v-for="(contact,index) in contacts">
             <div @click="contactSelect(index)" class="contact_card p-3 d-flex" v-if="contact.visible">
-              <img class="rounded-circle" :src="contact.avatar" alt="" width="80px">
+              <img class="rounded-circle" :src="contact.avatar" alt="" width="80px" height="80px">
               <div class="contact_name ps-4 pt-2 fs-3">
-                <p>{{contact.name}}</p>
+                <div>{{contact.name}}</div>
+                <div class="last_text fs-5 text-secondary">{{contact.messages[contact.messages.length -1].text}}</div>
               </div>
             </div>
           </div>

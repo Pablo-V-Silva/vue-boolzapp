@@ -4,6 +4,7 @@
   --slightgray: #EAEAEA;
   --gray: #B1B1B1;
   --blue: #8EDAFC;
+  --hovergray: #7c7c7c67;
 }
 
 /* DEBUG
@@ -86,6 +87,11 @@ i {
 
 .contact_card {
   border-bottom: 1px solid #cdcdcd;
+  cursor: pointer;
+}
+
+.contact_card:hover {
+  background-color: var(--hovergray);
 }
 
 /* CONTAINER DEI MESSAGGI 
