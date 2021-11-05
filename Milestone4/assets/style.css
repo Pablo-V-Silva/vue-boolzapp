@@ -181,6 +181,10 @@ div.received {
   color: rgb(0, 119, 255);
 }
 
+.dropdownVisible {
+  display: block;
+}
+
 .bg-green {
   background-color: var(--green);
   height: 200px;

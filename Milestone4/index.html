@@ -119,11 +119,11 @@
 
             <!-- Messaggi del contatto -->
             <div class="messages_from">
-              <div class="" v-for="message in contacts[counter].messages">
+              <div class="" v-for="(message, n) in contacts[counter].messages">
                 <div class="container_message clearfix">
                   <div :class="message.status" class="d-flex flex-column position-relative">
-                    <i class="dropdown fas fa-angle-down"></i>
-                    <div class="dropdownItem">
+                    <i @click="dropdown(n)" class="dropdown fas fa-angle-down"></i>
+                    <div class="dropdownItem" :class="dropdownBoolean != true ? 'dropdownItem' : 'dropdownVisible'">
                       <div>Message Info</div>
                       <div>Delete Message</div>
                     </div>

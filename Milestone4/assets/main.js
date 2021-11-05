@@ -4,6 +4,8 @@ const app = new Vue({
     counter: 0,
     text: '',
     searchBar: '',
+    counterDropdown: 0,
+    dropdownBoolean: false,
     contacts: [
       {
         name: 'Michele',
@@ -122,6 +124,14 @@ const app = new Vue({
           objectContact.visible = false
         }
       });
+    },
+
+    dropdown(i) {
+      this.counterDropdown = i
+      this.dropdownBoolean = true
+      if (this.dropdownBoolean == true) {
+        return this.dropdownBoolean == false
+      }
     }
   }
 })
