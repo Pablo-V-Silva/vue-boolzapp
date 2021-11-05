@@ -128,10 +128,22 @@ const app = new Vue({
 
     dropdown(i) {
       this.counterDropdown = i
-      this.dropdownBoolean = true
-      if (this.dropdownBoolean == true) {
-        return this.dropdownBoolean == false
+
+      if (this.dropdownBoolean != true) {
+        this.dropdownBoolean = true
+      } else if (this.dropdownBoolean != false) {
+        this.dropdownBoolean = false
       }
+      console.log(this.dropdownBoolean);
+    },
+
+    showDropdown() {
+      if (this.dropdownBoolean) {
+        this.dropdownBoolean = true
+      } else if (this.dropdownBoolean != false) {
+        this.dropdownBoolean = false
+      }
+
     }
   }
 })
