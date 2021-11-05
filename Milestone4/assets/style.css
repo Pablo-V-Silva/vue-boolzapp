@@ -151,6 +151,32 @@ div.received {
   color: gray;
 }
 
+.dropdownItem {
+  position: absolute;
+  right: 0rem;
+  z-index: 1;
+  top: 1.5rem;
+  width: 140px;
+  text-align: center;
+  height: 99px;
+  line-height: 40px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.5rem;
+  display: none;
+}
+
+.dropdownItem * {
+  border-bottom: 1px solid #cdcdcd;
+  margin: 0 0.2rem;
+  border-radius: 5px;
+}
+
+.dropdownItem *:hover {
+  background-color: rgb(168, 168, 168);
+}
+
 .dropdown:hover {
   color: rgb(0, 119, 255);
 }

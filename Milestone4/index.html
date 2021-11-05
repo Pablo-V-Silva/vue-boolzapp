@@ -123,6 +123,10 @@
                 <div class="container_message clearfix">
                   <div :class="message.status" class="d-flex flex-column position-relative">
                     <i class="dropdown fas fa-angle-down"></i>
+                    <div class="dropdownItem">
+                      <div>Message Info</div>
+                      <div>Delete Message</div>
+                    </div>
                     <div class="script_of_message fs-5 pe-3">{{message.text}}</div>
                     <span class="date text-end text-secondary">{{message.date}}</span>
                   </div>
