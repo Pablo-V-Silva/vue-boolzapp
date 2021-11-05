@@ -94,6 +94,10 @@ i {
   background-color: var(--hovergray);
 }
 
+.lastMessageDate {
+  font-size: 0.75rem;
+}
+
 /* CONTAINER DEI MESSAGGI 
 ************************************************************ */
 
