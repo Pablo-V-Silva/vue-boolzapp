@@ -145,6 +145,16 @@ div.received {
   font-size: 0.8rem;
 }
 
+.dropdown {
+  position: absolute;
+  right: 0.5rem;
+  color: gray;
+}
+
+.dropdown:hover {
+  color: rgb(0, 119, 255);
+}
+
 .bg-green {
   background-color: var(--green);
   height: 200px;
