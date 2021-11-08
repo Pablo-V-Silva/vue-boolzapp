@@ -71,7 +71,7 @@
 
           <!-- Elenco della rubrica telefonica con VueJS -->
           <div class="contacts" v-for="(contact,index) in contacts">
-            <div @click="contactSelect(index)" class="contact_card p-3 d-flex" v-if="contact.visible">
+            <div @click.disabled="dropdown" @click="contactSelect(index)" class="contact_card p-3 d-flex" v-if="contact.visible">
               <img class="rounded-circle" :src="contact.avatar" alt="" width="80px" height="80px">
               <div class="contact_name ps-4 pt-2 fs-3 w-100">
 
@@ -117,21 +117,23 @@
           <!-- Visualizzazione dei messaggi dei vari contatti -->
           <div class="messages_contain">
 
+            
             <!-- Messaggi del contatto -->
             <div class="messages_from">
-              <div class="" v-for="(message, n) in contacts[counter].messages">
+              <div v-for="(message, n) in contacts[counter].messages">
                 <div class="container_message clearfix">
                   <div :class="message.status" class="d-flex flex-column position-relative">
                     <i @click="dropdown(n)" class="dropdown fas fa-angle-down"></i>
-                    <div class="dropdownItem" :class="n === counterDropdown ? 'dropdownVisible' : ''">
+                    <div class="dropdownItem" :class="n === counterDropdown ? 'dropdownVisible' : ''" :class="dropdownBoolean == false ? dropdownNone : ''">
                       <div>Message Info</div>
-                      <div>Delete Message</div>
+                      <div @click="deleteMessage(n)">Delete Message</div>
                     </div>
                     <div class="script_of_message fs-5 pe-3">{{message.text}}</div>
                     <span class="date text-end text-secondary">{{message.date}}</span>
                   </div>
                 </div>
               </div>
+
               
             </div>
 

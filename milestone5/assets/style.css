@@ -185,6 +185,16 @@ div.received {
   display: block;
 }
 
+.script_of_message {
+  word-wrap: break-word;
+}
+
+.canceldropdown {
+  width: 100%;
+  height: calc(100% - 244 px);
+  position: absolute;
+}
+
 .bg-green {
   background-color: var(--green);
   height: 200px;

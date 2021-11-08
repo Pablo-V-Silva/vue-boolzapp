@@ -2,10 +2,10 @@ const app = new Vue({
   el: '#app',
   data: {
     counter: 0,
+    messageCounter: 0,
     text: '',
     searchBar: '',
     counterDropdown: '',
-    dropdownBoolean: false,
     contacts: [
       {
         name: 'Michele',
@@ -126,8 +126,18 @@ const app = new Vue({
       });
     },
 
+
     dropdown(i) {
-      this.counterDropdown = i
+      if (this.counterDropdown === '') {
+        this.counterDropdown = i
+      } else {
+        this.counterDropdown = ''
+      }
+    },
+
+    deleteMessage(i) {
+      this.contacts[this.counter].messages.splice(i, 1)
+      console.log(this.counter);
     },
   }
 })
