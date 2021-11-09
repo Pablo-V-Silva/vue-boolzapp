@@ -79,9 +79,10 @@
                 <div class="nameLastAccess d-flex justify-content-between align-items-center">
                   <div>{{contact.name}}
                   </div>
-                  <div class="lastMessageDate text-secondary">{{contact.messages[contact.messages.length -1].date}}</div>
+                  <div v-if="contact.messages.length" class="lastMessageDate text-secondary">{{contact.messages[contact.messages.length -1].date}}</div>
                 </div>
-                <div class="last_text fs-5 text-secondary">{{contact.messages[contact.messages.length -1].text}}</div>
+                <div v-if="contact.messages.length" class="last_text fs-5 text-secondary">{{contact.messages[contact.messages.length -1].text}}</div>
+                <div v-else class="last_text fs-5 text-secondary">Nessun Messaggio</div>
               </div>
             </div>
           </div>
